@@ -1,0 +1,109 @@
+<html><body><style>
+  :root {
+    --morning-orange: #FF6B35;
+    --coffee-dark: #3e2723;
+    --cream: #fff8e1;
+  }
+
+  .reviews-widget {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 420px;
+    background: var(--cream);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  /* Branding Section */
+  .brand-header {
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    color: var(--morning-orange);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 10px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .coffee-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .rating-main {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--coffee-dark);
+    line-height: 1;
+  }
+
+  .stars {
+    color: var(--morning-orange);
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .review-card {
+    background: white;
+    text-align: left;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-bottom: 3px solid var(--morning-orange);
+  }
+
+  .review-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--coffee-dark);
+  }
+
+  .btn-write {
+    margin-top: 20px;
+    width: 100%;
+    background: var(--morning-orange);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-write:hover {
+    filter: brightness(90%);
+  }
+</style>
+
+<div class="reviews-widget">
+  <div class="brand-header">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=150&auto=format&fit=crop" alt="Coffee" class="coffee-img">
+    <h1 class="brand-name">Morning Brew</h1>
+    <p style="color: #6d4c41; font-style: italic; font-size: 0.9rem;">Freshly roasted, locally loved.</p>
+  </div>
+
+  <div class="rating-main">5.0</div>
+  <div class="stars">★★★★★</div>
+  <p style="font-size: 0.8rem; color: #888;">Based on 150+ reviews</p>
+
+  <div class="review-card">
+    <div style="display: flex; justify-content: space-between;">
+      <span class="review-name">Sarah J.</span>
+      <span style="color: var(--morning-orange);">★★★★★</span>
+    </div>
+    <p style="font-size: 0.85rem; margin: 8px 0 0; line-height: 1.4;">
+      "Hands down the best espresso in town. The vibe at Morning Brew is exactly what I need to start my workday!"
+    </p>
+  </div>
+
+  <button class="btn-write">Write a Review</button>
+</div></body></html>
